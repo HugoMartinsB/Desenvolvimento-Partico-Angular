@@ -1,4 +1,7 @@
+<html>
+<body>
 <h1>PERSONAGENS DE RICK AND MORTY</h1>
+<h3>Exemplos de nomes para pesquisar: Rick, Morty, Summer e Birdperson</h3>
 
 <div class="character-search">
   <input [(ngModel)]="name" placeholder="Digite o nome do personagem" />
@@ -11,6 +14,10 @@
     <p><strong>Espécie:</strong> {{ character.species }}</p>
     <p><strong>Gênero:</strong> {{ character.gender }}</p>
     <p><strong>Status:</strong> {{ character.status }}</p>
+    <p><strong>Origem:</strong> {{ character.origin.name }}</p>
+    <p><strong>Localização:</strong> {{ character.location.name }}</p>
     <img [src]="character.image" alt="Imagem do personagem" />
   </div>
 </div>
+</body>
+</html>
